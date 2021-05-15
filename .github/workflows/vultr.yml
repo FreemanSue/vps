@@ -27,8 +27,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.18.3
+          
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2 # 第一步，下载代码仓库
+      - uses: actions/checkout@v2 # 下载代码仓库
 
       # Runs a single command using the runners shell
       # name: Run a one-line script
