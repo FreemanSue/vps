@@ -45,6 +45,15 @@ jobs:
           npm install
           npm run build
           
+      - name: remote dist
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VULTR_HOST }}
+          proxy_port: ${{ secrets.VULTR_PORT }}
+          username: ${{ secrets.VULTR_USERNAME }}
+          proxy_key: ${{ secrets.VULTR_RSA }}
+          script: bash /home/del.sh
+    
       - name: Deploy to Server
         uses: AEnterprise/rsync-deploy@v1.0 # 使用别人包装好的步骤镜像
         env:
@@ -55,3 +64,6 @@ jobs:
           SERVER_IP: ${{ secrets.VULTR_HOST }} # 引用配置，服务器的host名（IP或者域名domain.com）
           USERNAME: ${{ secrets.VULTR_USERNAME }} # 引用配置，服务器登录名
           SERVER_DESTINATION: /home/githubactions/ # 部署到目标文件夹
+          
+          
+          
