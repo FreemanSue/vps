@@ -2,8 +2,8 @@
   <div class="fly-header layui-bg-cyan">
     <div class="layui-container">
       
-      <a class="fly-logo" href="http://172.17.0.1:8080/#/add">
-        <img src="../assets/logo/logo.png" alt="logo" />
+      <a class="fly-logo" href="http://45.77.76.85:8099/#/add">
+        <img src="../assets/logo/f.png" alt="logo" />
       </a>
      
     </div>
