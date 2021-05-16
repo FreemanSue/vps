@@ -5,7 +5,7 @@
         <div class="layui-tab layui-tab-brief">
           <ul class="layui-tab-title">
             <li class="layui-this">
-              发表新帖
+              发表新帖:
             </li>
           </ul>
           <div class="layui-form layui-tab-content" id="LAY_ucm" style="padding: 20px 0;">

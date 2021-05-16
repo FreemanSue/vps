@@ -25,7 +25,7 @@ class HttpRequest {
   interceptors (instance) {
     // 请求拦截器
     // interceptors.request.use 作用是：触发拦截器执行use方法
-    // 参考：https://juejin.cn/post/6863745313711226887
+    // 参考:：https://juejin.cn/post/6863745313711226887
     instance.interceptors.request.use((config) => {
           
       return config

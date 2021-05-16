@@ -7,7 +7,7 @@ import qs from 'qs'
 //  @param {Object} options 读取文章列表接口参数
 // 属于接口
 const getList = (options) => {
-  // qs 的作用是：将传递的参数转换成变量的形式，然后拼接到 get(url 后面)
+  //  qs 的作用是：将传递的参数转换成变量的形式，然后拼接到 get(url 后面)
   return axios.get('/public/list?' + qs.stringify(options))
 }
 

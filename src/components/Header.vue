@@ -3,7 +3,7 @@
     <div class="layui-container">
       
       <a class="fly-logo" href="http://45.77.76.85:8099/#/add">
-        <img src="../assets/logo/f.png" alt="logo" />
+        <img src="../assets/logo/f22.png" alt="logo" />
       </a>
      
     </div>
